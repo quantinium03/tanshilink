@@ -6,10 +6,22 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/swagger": "^1.2.2",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.41.0",
+    "drizzle-typebox": "^0.3.0",
+    "elysia": "latest",
+    "pg": "^8.14.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/pg": "^8.11.11",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.30.5",
+    "tsx": "^4.19.3"
+  },
+  "override": {
+    "@sinclair/typebox": "0.34.27"
   },
   "module": "src/index.js"
 }
